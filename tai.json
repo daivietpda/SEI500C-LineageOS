@@ -1,13 +1,21 @@
 {
+  "id": null,
   "response": [
     {
-      "datetime": 1780668514,
+      "incremental": "",
+      "api_level": "",
+      "url": "http://172.22.159.19:88//builds/full/lineage-22.2-20260605-UNOFFICIAL-tai.zip",
+      "timestamp": 1780567200,
+      "md5sum": "727a7d497c3560e3a86d4600d51ebf6f",
+      "changes": "",
+      "channel": "unofficial",
       "filename": "lineage-22.2-20260605-UNOFFICIAL-tai.zip",
-      "id": "6aea5a3ae828982f6be7f7b4d207930d0123283030278aaf12ceb629bc2a4cbb",
-      "romtype": "UNOFFICIAL",
-      "size": 565452131,
-      "url": "https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/lineage-22.2-20260605-UNOFFICIAL-tai.zip",
-      "version": "22.2"
+      "romtype": "unofficial",
+      "datetime": 1780567200,
+      "version": "22.2",
+      "id": "4738ac79fb332c2f9f4e4d66b6194c5146c00ff75bfd7ab1da38edd20503ef2c",
+      "size": 565452131
     }
-  ]
+  ],
+  "error": null
 }
