@@ -4,17 +4,17 @@
     {
       "incremental": "",
       "api_level": "",
-      "url": "http://172.22.159.19:88//builds/full/lineage-22.2-20260605-UNOFFICIAL-tai.zip",
-      "timestamp": 1780631842,
-      "md5sum": "727a7d497c3560e3a86d4600d51ebf6f",
+      "url": "http://172.22.159.19:88//builds/full/lineage-22.2-20260606-UNOFFICIAL-tai.zip",
+      "timestamp": 1780653600,
+      "md5sum": "a11ef39025bc8cd4473fb56ca589498b",
       "changes": "",
       "channel": "unofficial",
-      "filename": "lineage-22.2-20260605-UNOFFICIAL-tai.zip",
+      "filename": "lineage-22.2-20260606-UNOFFICIAL-tai.zip",
       "romtype": "unofficial",
-      "datetime": 1780631842,
+      "datetime": 1780653600,
       "version": "22.2",
-      "id": "4738ac79fb332c2f9f4e4d66b6194c5146c00ff75bfd7ab1da38edd20503ef2c",
-      "size": 565426738
+      "id": "dd550637ee032d3efb10991ff9d762dfd6bd41a77fb3771e650a836821365839",
+      "size": 565423635
     }
   ],
   "error": null
