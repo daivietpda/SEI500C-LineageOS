@@ -1,7 +1,7 @@
-﻿# SEI500C-LineageOS 22.2 Android 15
+﻿# SEI500C LineageOS 22.2 Android 15
 ## ℹ️ HƯỚNG DẪN
 Giống như trên điện thoại , để cài được được rom LineageOS bắt buộc phải unlock bootloader </br>
-Trên SEI500C này để unlock chúng ta phải sử dụng biện pháp ép buộc , nguồn hướng dẫn ở đây [**Forcibly unlocking the bootloader**](https://wiki.lineageos.org/devices/dopinder/install/#forcibly-unlocking-the-bootloader) <br> <br>
+Trên SEI500C Android 10 để unlock chúng ta phải sử dụng biện pháp ép buộc , nguồn hướng dẫn ở đây [**Forcibly unlocking the bootloader**](https://wiki.lineageos.org/devices/dopinder/install/#forcibly-unlocking-the-bootloader) <br> <br>
 
 
 ***BƯỚC 1** : 
@@ -35,7 +35,7 @@ fastboot getvar unlocked
 kết quả trả về là `unlocked: yes` là ok , nếu `unlocked: no` bạn cần làm lại bước 1 và bước 2 .<br>
 
 ***BƯỚC 4**
-tải file [recovery.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/recovery.img) [boot.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/boot.img) , [vbmeta.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/vbmeta.img) , [logo.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/logo.img) , [super_empty.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/super_empty.img) , về và nạp qua fastboot
+tải file [recovery.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/recovery.img) , [boot.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/boot.img) , [vbmeta.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/vbmeta.img) , [logo.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/logo.img) , [super_empty.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/super_empty.img) , về và nạp qua fastboot
 ```
 fastboot flash recovery recovery.img
 fastboot flash boot boot.img
