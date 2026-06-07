@@ -1,7 +1,7 @@
 ﻿# SEI500C LineageOS 22.2 Android 15
 ## ℹ️ HƯỚNG DẪN
 Giống như trên điện thoại , để cài được được rom LineageOS bắt buộc phải unlock bootloader </br>
-Trên SEI500C Android 10 để unlock chúng ta phải sử dụng biện pháp ép buộc , nguồn hướng dẫn ở đây [**Forcibly unlocking the bootloader**](https://wiki.lineageos.org/devices/dopinder/install/#forcibly-unlocking-the-bootloader) <br> <br>
+Trên SEI500C Android 10 để unlock chúng ta phải sử dụng biện pháp cưỡng bức , nguồn hướng dẫn ở đây [**Forcibly unlocking the bootloader**](https://wiki.lineageos.org/devices/dopinder/install/#forcibly-unlocking-the-bootloader) <br> <br>
 
 
 ***BƯỚC 1** : 
