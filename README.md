@@ -28,4 +28,6 @@ các bước còn lại giống như hướng dẫn trên trang [**wiki lineageO
 - https://github.com/daivietpda/android_device_sei_tai
 - https://github.com/daivietpda/proprietary_vendor_sei_tai
 - https://github.com/daivietpda/android_kernel_amlogic_linux-4.9
-- https://github.com/LineageOS/
+- https://github.com/LineageOS/ <br>
+##  Contact:
+http://t.me/daivietpda
