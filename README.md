@@ -4,21 +4,52 @@ Giống như trên điện thoại , để cài được được rom LineageOS 
 Trên SEI500C này để unlock chúng ta phải sử dụng biện pháp ép buộc dùng aml-flash-tool update </br>
 Hướng dẫn ở tại đây unlock ở đây [**Forcibly unlocking the bootloader**](https://wiki.lineageos.org/devices/dopinder/install/#forcibly-unlocking-the-bootloader) <br>
 công cụ update cho [**windows tải ở đây**](https://github.com/khadas/utils/tree/master/aml-flash-tool/tools/windows) <br>
-trên SEI500C sẽ cần thêm 1 dòng `./update bulkcmd "setenv oemlock unlock"`
-tất cả các lệnh cần có </br>
- `./update bulkcmd "setenv lock 10100000"`
- <br>
- `./update bulkcmd "setenv oemlock unlock"`
-  <br>
- `./update bulkcmd "saveenv"`
-  <br>
- `./update bulkcmd "reboot bootloader"`
-  <br>
-kiểm tra xem đã unkock bootloader thành công chưa
-`fastboot getvar unlocked`
-<br>
-kết quả trả về là `unlocked: yes` là ok , nếu `unlocked: no` bạn cần làm lại bước bên trên .
-các bước còn lại giống như hướng dẫn trên trang [**wiki lineageOS**](https://wiki.lineageos.org/devices/dopinder/install/#flashing-the-dtb-and-dtbo-partitions) <br>
+trên SEI500C sẽ cần thêm 1 dòng `./update bulkcmd "setenv oemlock unlock"` <br>
+
+***BƯỚC 1** : <br>
+vào chế độ `Burn Mode` bằng cách nhấn giữ  lỗ reset ở đáy box sau đó cắm cáp usb vào cổng 2.0 rồi cắm nguồn điện <br>
+đợi 15s thì bỏ tay lỗ reset ra , trên máy tính sẽ nhận Burn Mode <br>
+bạn hãy cài đặt [Amlogic USB Burning Tool  v2](https://mega.nz/folder/j9F1SKrZ#FhQyNe1LEID-sM1vRrzjFg) và mở lên để thấy trạng thái kết nối<br>
+
+***BƯỚC 2** : Mở PowerSell trên windows và gõ <br>
+```
+./update bulkcmd "setenv lock 10100000"
+./update bulkcmd "setenv oemlock unlock"
+./update bulkcmd "saveenv"`
+./update bulkcmd "reboot bootloader"
+```
+***BƯỚC 3**
+
+tải file [dtb.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/dtb.img) và [dtbo.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/dtbo.img) về và flash qua fastboot.
+
+```
+fastboot flash dtb dtb.img
+fastboot flash dtbo dtbo.img
+```
+khởi động lại bootloader
+```
+fastboot reboot bootloader
+```
+kiểm tra xem đã unkock bootloader thành công chưa <br>
+
+```
+fastboot getvar unlocked
+```
+kết quả trả về là `unlocked: yes` là ok , nếu `unlocked: no` bạn cần làm lại bước 1 và bước 2 .<br>
+
+***BƯỚC 4**
+tải file [recovery.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/recovery.img) về và nạp qua fastboot
+```
+fastboot flash recovery recovery.img
+```
+khởi động vào chế độ recovery
+```
+fastboot boot recovery.img
+```
+***BƯỚC 5** . Cài đặt LineageOS từ chế độ recovery <br>
+Tải xuống tệp zip [lineage-22.2-20260606-UNOFFICIAL-tai.zip](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/lineage-22.2-20260606-UNOFFICIAL-tai.zip)
+
+
 
 ## ⬇️ Download các file cần nạp
 
