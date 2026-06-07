@@ -24,4 +24,8 @@ các bước còn lại giống như hướng dẫn trên trang [**wiki lineageO
 
 [**Download Latest Release**](https://github.com/daivietpda/SEI500C-LineageOS/releases)
 
-
+## ℹ️Sources:
+- https://github.com/daivietpda/android_device_sei_tai
+- https://github.com/daivietpda/proprietary_vendor_sei_tai
+- https://github.com/daivietpda/android_kernel_amlogic_linux-4.9
+- https://github.com/LineageOS/
