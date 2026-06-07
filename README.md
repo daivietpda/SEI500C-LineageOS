@@ -52,7 +52,7 @@ bạn có thể sử dụng điều khiển hồng ngoại của fpt/tv360 để
 hoặc cắm điều khiển usb 2.4 hoặc bàn phím máy tính.<br>
 Trước tiên  Factory reset / Fomart data / factory reset để làm sạch dữ liệu cũ<br>
 Tải xuống tệp zip [lineage-22.2-20260606-UNOFFICIAL-tai.zip](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/lineage-22.2-20260606-UNOFFICIAL-tai.zip) <br>
-Bạn có thể chép vào usb cắm vào cổng usb 30 rồi vào mục Apply update > chọn đến usb > chọn file zip và nạp<br>
+Bạn có thể chép vào usb cắm vào cổng usb 3.0 rồi vào mục Apply update > chọn đến usb > chọn file zip và nạp<br>
 nếu bạn không có usb stick bạn có thể cài đặt qua adb sideload<br>
 cắm cáp vào cổng usb 2.0 , trên recovery vào mục Apply update > ADB Sideload<br>
 trên máy tính gõ <br>
@@ -60,7 +60,6 @@ trên máy tính gõ <br>
 adb -d sideload /path/to/lineage-22.2-20260606-UNOFFICIAL-tai.zip
 ```
 quá trình cài đặt diễn ra tự động , đợi sau khi thành công thì chọn khởi động lại và thưởng thức Android 15 <br>
-
 
 
 
