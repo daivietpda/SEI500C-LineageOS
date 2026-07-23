@@ -51,7 +51,7 @@ Tải xuống **2 file** từ trang Releases:
 ### Bước 4: Xoá dữ liệu (Wipe)
 
 1. Vào **Wipe** → chọn **Factory reset / Wipe data**.
-2. Xác nhận xoá dữ liệu. ⚠️ *Thao tác này sẽ xóa toàn bộ dữ liệu — hãy sao lưu nếu cần.*
+2. Xác nhận xoá dữ liệu.
 
 ### Bước 5: Khởi động lại
 
