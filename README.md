@@ -18,7 +18,8 @@ Tải xuống **2 file** từ trang Releases:
 | File | Công dụng |
 |------|-----------|
 | `aml_install_package.img` | Nạp qua USB Burning Tool |
-| File `.zip` | Cập nhật trong Recovery |
+| File `lineage-22.2-20260723-UNOFFICIAL-tai.zip
+` | Cập nhật trong Recovery |
 
 ---
 
