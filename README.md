@@ -60,7 +60,15 @@ Tải **2 file** từ trang Releases bên dưới:
 
 ---
 
-## 🔗 Nguồn tham khảo (Source code)
+## � Changelog
+
+Xem lịch sử thay đổi các phiên bản tại đây:
+
+👉 [**CHANGE-LOG.md**](CHANGE-LOG.md)
+
+---
+
+## �🔗 Nguồn tham khảo (Source code)
 
 - [Device tree — android_device_sei_tai](https://github.com/daivietpda/android_device_sei_tai)
 - [Vendor blobs — proprietary_vendor_sei_tai](https://github.com/daivietpda/proprietary_vendor_sei_tai)
