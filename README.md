@@ -1,75 +1,74 @@
-﻿# SEI500C LineageOS 22.2 Android 15
-## ℹ️ HƯỚNG DẪN
-Giống như trên điện thoại , để cài được được rom LineageOS bắt buộc phải unlock bootloader </br>
-Trên SEI500C Android 10 để unlock chúng ta phải sử dụng biện pháp cưỡng bức , nguồn hướng dẫn ở đây [**Forcibly unlocking the bootloader**](https://wiki.lineageos.org/devices/dopinder/install/#forcibly-unlocking-the-bootloader) <br> <br>
+﻿# SEI500C LineageOS 22.2 — Android 15
 
+Hướng dẫn cài đặt ROM LineageOS 22.2 (Android 15) cho thiết bị SEI500C.
 
-***BƯỚC 1** : 
-vào chế độ `Burn Mode` bằng cách nhấn giữ  lỗ reset ở đáy box sau đó cắm cáp usb vào cổng 2.0 rồi cắm nguồn điện <br>
-đợi 15s thì bỏ tay lỗ reset ra , trên máy tính sẽ nhận Burn Mode <br>
-bạn hãy cài đặt [Amlogic USB Burning Tool  v2](https://mega.nz/folder/j9F1SKrZ#FhQyNe1LEID-sM1vRrzjFg) và mở lên để thấy trạng thái kết nối<br>
-tải công cụ update cho [**windows tải ở đây**](https://github.com/khadas/utils/tree/master/aml-flash-tool/tools/windows) <br>
-***BƯỚC 2** : Mở PowerSell trên windows và gõ <br>
-```
-./update bulkcmd "setenv lock 10100000"
-./update bulkcmd "setenv oemlock unlock"
-./update bulkcmd "saveenv"
-./update bulkcmd "reboot bootloader"
-```
-***BƯỚC 3**
-tải file [dtb.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/dtb.img) và [dtbo.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/dtbo.img) về và flash qua fastboot.
+---
 
-```
-fastboot flash dtb dtb.img
-fastboot flash dtbo dtbo.img
-```
-khởi động lại bootloader
-```
-fastboot reboot bootloader
-```
-kiểm tra xem đã unkock bootloader thành công chưa <br>
+## 🛠 Công cụ cần thiết
 
-```
-fastboot getvar unlocked
-```
-kết quả trả về là `unlocked: yes` là ok , nếu `unlocked: no` bạn cần làm lại bước 1 và bước 2 .<br>
+Tải **Amlogic USB Burning Tool v2** tại đây:
+👉 [Link tải](https://mega.nz/folder/j9F1SKrZ#FhQyNe1LEID-sM1vRrzjFg)
 
-***BƯỚC 4**
-tải file [recovery.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/recovery.img) , [boot.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/boot.img) , [vbmeta.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/vbmeta.img) , [logo.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/logo.img) , [super_empty.img](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/super_empty.img) , về và nạp qua fastboot
-```
-fastboot flash recovery recovery.img
-fastboot flash boot boot.img
-fastboot flash vbmeta vbmeta.img
-fastboot flash logo logo.img
-fastboot flash super super_empty.img
-```
-khởi động vào chế độ recovery
-```
-fastboot boot recovery.img
-```
-***BƯỚC 5** . Cài đặt LineageOS từ chế độ recovery <br>
-bạn có thể sử dụng điều khiển hồng ngoại của fpt/tv360 để điều khiển bên trong recovery<br>
-hoặc cắm điều khiển usb 2.4 hoặc bàn phím máy tính.<br>
-Trước tiên  Factory reset / Fomart data / factory reset để làm sạch dữ liệu cũ<br>
-Tải xuống tệp zip [lineage-22.2-20260606-UNOFFICIAL-tai.zip](https://github.com/daivietpda/SEI500C-LineageOS/releases/download/v1.0/lineage-22.2-20260606-UNOFFICIAL-tai.zip) <br>
-Bạn có thể chép vào usb cắm vào cổng usb 3.0 rồi vào mục Apply update > chọn đến usb > chọn file zip và nạp<br>
-nếu bạn không có usb stick bạn có thể cài đặt qua adb sideload<br>
-cắm cáp vào cổng usb 2.0 , trên recovery vào mục Apply update > ADB Sideload<br>
-trên máy tính gõ <br>
-```
-adb -d sideload /path/to/lineage-22.2-20260606-UNOFFICIAL-tai.zip
-```
-quá trình cài đặt diễn ra tự động , đợi sau khi thành công thì chọn khởi động lại và thưởng thức Android 15 <br>
+## 📥 Tải ROM mới nhất
 
+Tải xuống **2 file** từ trang Releases:
 
+👉 [**File IMG và File ZIP**](https://github.com/daivietpda/SEI500C-LineageOS/releases)
 
-## ⬇️ Download ROM mới nhất
-[**Download Latest Release**](https://github.com/daivietpda/SEI500C-LineageOS/releases)
+| File | Công dụng |
+|------|-----------|
+| `aml_install_package.img` | Nạp qua USB Burning Tool |
+| File `.zip` | Cập nhật trong Recovery |
 
-## ℹ️Sources:
-- https://github.com/daivietpda/android_device_sei_tai
-- https://github.com/daivietpda/proprietary_vendor_sei_tai
-- https://github.com/daivietpda/android_kernel_amlogic_linux-4.9
-- https://github.com/LineageOS/ <br>
-##  Contact:
-http://t.me/daivietpda
+---
+
+## 📖 Hướng dẫn cài đặt chi tiết
+
+### Bước 1: Nạp file IMG qua USB Burning Tool
+
+1. Mở **Amlogic USB Burning Tool v2**.
+2. Nhấn **File** → **Import image** → chọn file `aml_install_package.img`.
+3. **Quan trọng:** Bỏ chọn hai ô sau:
+   - ❌ `Erase Flash`
+   - ❌ `Erase Bootloader`
+4. Nhấn **Start** trên tool.
+5. **Lật ngửa box**, dùng tăm **giữ nút Reset** ở đáy box.
+6. **Cắm cáp USB cổng 2.0** vào cổng USB 2.0 trên máy tính, **cắm điện cho box** — **vẫn giữ chặt tăm**.
+7. **Đợi khoảng 15 giây** rồi **thả tăm** ra.
+8. Tool sẽ tự động nhận thiết bị và bắt đầu nạp. ✅
+
+### Bước 2: Khởi động vào Recovery
+
+1. Sau khi nạp xong, **rút nguồn điện** của SEI500C.
+2. **Cắm lại nguồn** — thiết bị sẽ tự động boot vào **Recovery**.
+
+### Bước 3: Cập nhật file ZIP
+
+1. Trong Recovery, chọn **Update** (hoặc **Apply update**).
+2. Chọn file **.zip** đã tải về.
+3. Xác nhận và chờ quá trình hoàn tất.
+
+### Bước 4: Xoá dữ liệu (Wipe)
+
+1. Vào **Wipe** → chọn **Factory reset / Wipe data**.
+2. Xác nhận xoá dữ liệu. ⚠️ *Thao tác này sẽ xóa toàn bộ dữ liệu — hãy sao lưu nếu cần.*
+
+### Bước 5: Khởi động lại
+
+1. Chọn **Reboot system now**.
+2. Chờ thiết bị khởi động. Chúc mừng! Bạn đã cài đặt thành công **LineageOS 22.2 (Android 15)**! 🎉
+
+---
+
+## 🔗 Nguồn tham khảo (Source code)
+
+- [Device tree — android_device_sei_tai](https://github.com/daivietpda/android_device_sei_tai)
+- [Vendor blobs — proprietary_vendor_sei_tai](https://github.com/daivietpda/proprietary_vendor_sei_tai)
+- [Kernel — android_kernel_amlogic_linux-4.9](https://github.com/daivietpda/android_kernel_amlogic_linux-4.9)
+- [LineageOS](https://github.com/LineageOS/)
+
+---
+
+## 📬 Liên hệ
+
+Telegram: [@daivietpda](http://t.me/daivietpda)
