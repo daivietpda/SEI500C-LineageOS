@@ -11,15 +11,14 @@ Tải **Amlogic USB Burning Tool v2** tại đây:
 
 ## 📥 Tải ROM mới nhất
 
-Tải xuống **2 file** từ trang Releases:
+Tải **2 file** từ trang Releases bên dưới:
 
-👉 [**File IMG và File ZIP**](https://github.com/daivietpda/SEI500C-LineageOS/releases)
+👉 [**Trang Releases**](https://github.com/daivietpda/SEI500C-LineageOS/releases)
 
 | File | Công dụng |
 |------|-----------|
 | `aml_install_package.img` | Nạp qua USB Burning Tool |
-| File `lineage-22.2-20260723-UNOFFICIAL-tai.zip
-` | Cập nhật trong Recovery |
+| `lineage-22.2-20260723-UNOFFICIAL-tai.zip` | Cập nhật trong Recovery |
 
 ---
 
